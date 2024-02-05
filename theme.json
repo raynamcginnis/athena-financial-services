@@ -1,6 +1,40 @@
 {
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+				"color": "#005c5c",
+				"name": "Deep Teal",
+				"slug": "deep-teal"
+				},
+				{
+				"color": "#ffb6c1",
+				"name": "Soft Pink",
+				"slug": "soft-pink"
+				},
+				{
+				"color": "#ffd700",
+				"name": "Gold Accent",
+				"slug": "gold-accent"
+				},
+				{
+				"color": "#333333",
+				"name": "Charcoal",
+				"slug": "charcoal"
+				},
+				{
+				"color": "#967bb6",
+				"name": "Lavender",
+				"slug": "lavender"
+				},
+				{
+				"color": "#f8f8ff",
+				"name": "Creamy White",
+				"slug": "creamy-white"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "620px",
 			"wideSize": "1000px"
@@ -16,6 +50,79 @@
 			]
 		},
 		"typography": {
+			"fluid": true,
+			"fontSizes": [
+				{
+					"fluid": {
+						"max": "0.89rem",
+						"min": "0.8rem"
+					}, 
+					"name": "Small",
+					"slug": "sm-r",
+					"size": "0.8rem"
+
+				}, 
+				{
+					"fluid": {
+						"max": "1.19rem",
+						"min": "1rem"
+					}, 
+					"name": "Base",
+					"slug": "bs-r",
+					"size": "1rem"
+
+				},
+				{
+					"fluid": {
+						"max": "1.58",
+						"min": "1.25rem"
+					}, 
+					"name": "Medium",
+					"slug": "md-r",
+					"size": "1.25rem"
+
+				}, 
+				{
+					"fluid": {
+						"max": "2.11",
+						"min": "1.56rem"
+					}, 
+					"name": "Large",
+					"slug": "lg-r",
+					"size": "1.56rem"
+
+				}, 
+				{
+					"fluid": {
+						"max": "2.81",
+						"min": "1.95rem"
+					}, 
+					"name": "Extra Large",
+					"slug": "xl-r",
+					"size": "1.95rem"
+
+				}, 
+				{
+					"fluid": {
+						"max": "3.75rem",
+						"min": "2.44rem"
+					}, 
+					"name": "XXL",
+					"slug": "xxl-r",
+					"size": "2.44rem"
+
+				}, 
+				{
+					"fluid": {
+						"max": "5rem",
+						"min": "3.05rem"
+					}, 
+					"name": "XXXL",
+					"slug": "xxxl-r",
+					"size": "3.05rem"
+
+				}
+			],
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -174,6 +281,49 @@
 	},
 	"styles": {
 		"elements": {
+			"h1": { 
+				"typography": {
+					"fontSize": "clamp(3.05rem, 2.73vw + 2.37rem, 5rem)",
+				"lineHeight": "1.4"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "clamp(2.44rem, 1.83vw + 1.98rem, 3.75rem)",
+					"lineHeight": "1.4"
+				}
+				
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "clamp(1.95rem, 1.2vw + 1.65rem, 2.81rem)",
+					"lineHeight": "1.2"
+				}
+				
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "clamp(1.56rem, 0.77vw + 1.37rem, 2.11rem)",
+					"lineHeight": "1.2"
+				}
+				
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "clamp(1.25rem, 0.47vw + 113rem, 1.58rem)",
+					"lineHeight": "1.2"
+				}
+				
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "clamp(1rem, 0.26vw + 0.93rem, 1.19rem)",
+					"lineHeight": "1.2"
+				}
+				
+			},
+
+
 			"button": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--lato)",

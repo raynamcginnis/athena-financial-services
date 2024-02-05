@@ -14,3 +14,104 @@ Text Domain: athenafinancialservices
 Tags: custom-logo, full-site-editing, 
 */
 
+
+/* Navigation Styling */
+
+.afs-custom-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.wp-block-navigation .current-menu-item a {
+border-bottom: 2px solid var(--wp--preset--color--deep-teal);
+}
+
+.wp-block-navigation .wp-block-navigation-item__label:hover {    
+    border-bottom: 2px solid var(--wp--preset--color--deep-teal);
+}
+
+@media (max-width: 599px)
+{
+    .wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+        color: var(--wp--preset--color--deep-teal);
+    }    
+    .wp-container-core-navigation-layout-1.wp-container-core-navigation-layout-1 {
+        margin-top: -25px;
+    }
+}
+
+.wp-block-navigation__responsive-container-close {
+    color: var(--wp--preset--color--deep-teal);
+}
+
+
+.relative {
+    position: relative; 
+}
+
+/* services section */
+.services-col {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.wp-element-button:hover {
+    background-color: var(--wp--preset--color--deep-teal);
+}
+
+/* why us section */
+
+.why-us-col {
+    box-sizing: border-box;
+    background-color: rgba(255, 253, 246, 0.1);
+    backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+}
+
+@media (max-width: 781px)
+{
+.why-us-values {
+        display:none;
+    }   
+}
+
+/* latest articles section */
+.latest-articles-h2 {
+    font-size: clamp(2.44rem, 1.83vw + 1.98rem, 3.75rem);
+}
+
+body > div.wp-site-blocks > footer {
+    margin-block-start: 0px;
+}
+
+/* contact form styling */
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+textarea {
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+}
+
+.wpcf7-submit {
+    font-size: 1rem;
+    background-color: var(--wp--preset--color--lavender);
+    color: var(--wp--preset--color--creamy-white);
+    font-family: var(--wp--preset--font-family--lato);
+    padding: 16px 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+}
+/* footer */
+
+.footer-work-with-us .wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+    color: var(--wp--preset--color--creamy-white);
+}
